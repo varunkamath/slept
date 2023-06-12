@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>slept</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{ message }}</h1>
+    </div>
+    <template>
+        <vue-hacker-text text="slept@slept.black" />
+    </template>
+
+            <script>
+                import Vue from 'vue';
+                import VueHackerText from 'vue-hacker-text';
+
+                export default Vue.extend({
+                    components: {
+                        VueHackerText
+                    },
+                });
+            </script>
+    <div class="hacker-text">
+        <vue-hacker-text text="slept@slept.black"/>
+    </div>
+
+    <style>
+        .hacker-text {
+            font-weight: 600;
+            font-size: 2em;
+            color: red;
+        }
+    </style>
+</body>
+
+</html>
